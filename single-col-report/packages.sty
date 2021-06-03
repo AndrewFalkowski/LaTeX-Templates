@@ -1,0 +1,53 @@
+\usepackage[left=1.75in, right=1.75in, top=1.25in, bottom=1.25in]{geometry}
+
+% captions styling
+%-----------------------------------------
+\usepackage[labelfont=bf, skip=5pt, font={footnotesize}]{caption}
+\usepackage{subcaption}
+
+% Images/Figures Styling
+%-----------------------------------------
+\usepackage{graphicx}
+
+% Tables Styling
+%-----------------------------------------
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{tabu}
+
+% Paragraph Styling
+%-----------------------------------------
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0in}
+\renewcommand{\baselinestretch}{1.1} 
+\widowpenalty10000
+\clubpenalty10000
+
+% Hyperlink Styling
+%-----------------------------------------
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% Text Styling
+%-----------------------------------------
+\usepackage{titlesec}
+
+\titleformat{\section}{\Large}{}{0em}%
+    {\rule[-1mm]{6cm}{0.25mm}\\}
+
+\titleformat{\subsection}{\large\it}{}{0em}{}
+
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+% \usepackage[T1]{fontenc}
+% \usepackage[oldstylenums]{kpfonts}
+
+% citation styling
+%-----------------------------------------
+\usepackage[style=chem-acs, articletitle=true]{biblatex}
+\renewcommand*{\bibfont}{\small}

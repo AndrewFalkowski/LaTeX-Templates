@@ -1,0 +1,33 @@
+\newcommand{\sfig}[4][\relax]{
+    \ifx\relax#1 \begin{figure}[!t] \else \begin{figure}[#1] \fi
+    \centering
+    \includegraphics[width=\textwidth]{figures/#2}
+    \caption{#3}
+    \label{fig:#4}
+    \end{figure}
+}
+
+\newcommand{\rfig}[4][\relax]{
+\ifx\relax#1 \begin{figure}[!t] \else \begin{figure}[#1] \fi
+  \begin{minipage}[c]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{figures/#2}
+  \end{minipage}\hfill
+  \begin{minipage}[b]{0.39\textwidth}
+    \caption{#3}
+    \label{fig:#4}
+  \end{minipage}
+\end{figure}
+}
+
+\renewcommand{\abstractname}{\vspace{20mm} \normalfont\large Abstract}
+
+\renewcommand{\maketitle}[2]{
+    \begin{center}
+        \rule[3.5mm]{\textwidth}{0.5mm}\\
+        \begin{Huge}
+        #1
+        \end{Huge}\\
+        \rule{\textwidth}{0.25mm}
+        \textsc{#2}
+    \end{center}
+}
